@@ -5,8 +5,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 echo 'Checking out the code...'
-                // If using Git repo
-                // git 'https://your-repo-url.git'
+                git branch: 'main', url: 'https://github.com/sakshivirhajobsearch/static-gym-html-css-app-jenkins-local-windows.git'
             }
         }
 
